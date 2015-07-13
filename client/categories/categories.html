@@ -1,10 +1,10 @@
 <template name="categories">
     <div class="page-header">
         <h1 >
-            <small class="wow bounceInUp" data-wow-delay="0.2s">Categories</small>
+           <strong style="color:black;font-size:24px;background:white;opacity:0.5" class="wow bounceInUp" data-wow-delay="0.2s">Categories</strong>
         </h1>
     </div>
-    <ul class="nav nav-list ">
+    <ul class="nav nav-list wow fadeInLeft">
         {{#each Categories}}
         <li class="nav-header">{{name}}</li>
         {{#each SubCategories}}
