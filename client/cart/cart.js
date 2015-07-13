@@ -16,8 +16,8 @@ Template.cart.helpers({
         shopCart.push(cartitem);
     });
     shopCart.subtotal = total;
-    shopCart.tax = shopCart.subtotal * .06;
-    shopCart.total = shopCart.subtotal + shopCart.tax;
+   // shopCart.tax = shopCart.subtotal * .06;
+    shopCart.total = shopCart.subtotal ;//+ shopCart.tax;
     return shopCart; 
     }
 })
@@ -27,3 +27,7 @@ Template.cart.events({
         Meteor.call('removeCartItem',this._id);
     }
 });
+
+Template.cart.rendered = function() {
+  new WOW().init();
+}

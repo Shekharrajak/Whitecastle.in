@@ -1,7 +1,7 @@
 <template name="cart">
     <div class="page-header">
         <h1>
-            <small>My Cart</small>
+            <small class="wow bounceInUp" data-wow-delay="0.8s">My Cart</small>
         </h1>
     </div>
     <table class="span4 table table-striped table-bordered table-hover">
@@ -17,21 +17,21 @@
             <td>{{qty}}</td>
             <td>{{productname}}</td>
             <td>{{currency price}}</td>
-            <td><span class="label-important label removeci">X</span></td>
+            <td><a href="#"><span class="label-important label removeci">X</span></a></td>
         </tr>
         {{else}}
         <tr>
             <td colspan="3">No Products in Cart</td>
         </tr>
         {{/each}}
-        <tr>
+      <!--   <tr>
             <td class="totalcol" colspan="2">SubTotal:</td>
             <td colspan="2">{{currency cartitems.subtotal}}</td>
-        </tr>
-        <tr>
+        </tr> -->
+       <!--  <tr>
             <td class="totalcol" colspan="2">Tax 6%:</td>
             <td colspan="2">{{currency cartitems.tax}}</td>
-        </tr>
+        </tr> -->
         <tr>
             <td class="totalcol" colspan="2">Total:</td>
             <td colspan="2">{{currency cartitems.total}}</td>

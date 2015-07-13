@@ -1,7 +1,8 @@
+
 <template name="products">
-    <div class="page-header">
-        <h1>
-            <span class="label-important label">{{category}}</span> <small>Products </small>
+    <div class="page-header ">
+        <h1 class="wow bounceInUp" data-wow-delay="0.5s">
+            <span class="label-important label" >{{category}}</span> <small>Products </small>
         </h1>
     </div>
     {{#each productlist}}
@@ -16,12 +17,12 @@
 </template>
 <template name="product">
     <div class="well span3">
-        <ul id="{{_id}}" class="nav nav-list ">
+        <ul id="{{_id}}" class="nav nav-list addcart1">
             <!-- <li class="thumbnail"><img  style="height:90px;width:auto"  src="/{{thumb}}"/></li> -->
-            <li><strong>{{name}}</strong></li>
+            <li ><strong>{{name}}</strong></li>
             <!-- <li>{{desc}}</li> -->
-            <li><strong>{{currency price}}</strong></li>
-            <input placeholder="Qty" class="input input-mini prodqty" value="0"/><a class="btn btn-success btn-mini addcart" href="#">Add</a>
+            <li ><strong>{{currency price}}</strong></li>
+            <input placeholder="Qty" class="input input-mini prodqty" value="0"/><a class="btn btn-success btn-mini addcart" href="#"><strong>Add</strong></a>
         </ul>
     </div>
 </template>
